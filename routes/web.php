@@ -11,3 +11,6 @@ Route::get('/', function () {
 Route::view('admin-login','admin-login');
 Route::post('admin-login',[AdminController::class,'login']);
 Route::get('dashboard',[AdminController::class,'dashboard']);
+Route::get('categories',[AdminController::class,'categories']);
+Route::get('admin-logout',[AdminController::class,'logout']);
+Route::post('add-category',[AdminController::class,'addCategory']);

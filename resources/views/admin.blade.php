@@ -1,1 +1,22 @@
-<h1>Hello, Welcome {{$name}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    @vite('resources/css/app.css')
+</head>
+<body>
+    <nav class="bg-white shadow-md px-4 py-3">
+        <div class="flex justify-between items-center">
+            <div class="text-gray-700 text-2xl hover:text-blue-500 cursor-pointer">
+                Quiz System
+            </div>
+            <div class="space-x-4">
+                <a class="text-gray-700 hover:text-blue-500 cursor-pointer">Categories</a>
+                <a class="text-gray-700 hover:text-blue-500 cursor-pointer">Quiz</a>
+                <a class="text-gray-700 hover:text-blue-500 cursor-pointer">Welcome {{$name}}</a>
+                <a class="text-gray-700 hover:text-blue-500 cursor-pointer">Login</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

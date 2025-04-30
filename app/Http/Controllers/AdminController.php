@@ -62,12 +62,23 @@ class AdminController extends Controller
     }
     function addCategory(Request $request)
     {
+      $validation = $request->validate([
+        "category"=>"required | min:3 | unique:categories,name"
+      ]);
       $admin  =session::get('admin');
       $category = new Category();
       $category->name=$request->category;
       $category->creator=$admin->name;
       if($category->save()){
         session::flash('category',"Success : Category ".$request->category." Added");
+      }
+      return redirect('categories');
+    }
+    function deleteCategory($id)
+    {
+      $isDeleted = Category::find($id)->delete();
+      if($isDeleted){
+        session::flash('category',"Success : Category Deleted");
       }
       return redirect('categories');
     }

@@ -15,3 +15,4 @@ Route::get('categories',[AdminController::class,'categories']);
 Route::get('admin-logout',[AdminController::class,'logout']);
 Route::post('add-category',[AdminController::class,'addCategory']);
 Route::get('categories/delete/{id}',[AdminController::class,'deleteCategory']);
+Route::get('add-quiz',[AdminController::class,'addQuiz']);

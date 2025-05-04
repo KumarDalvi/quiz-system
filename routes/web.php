@@ -20,6 +20,7 @@ Route::view('user-login','user-login');
 Route::post('user-login',[UserController::class,'userLogin']);
 Route::get('user-login-quiz',[UserController::class,'userLoginQuiz']);
 Route::get('mcq/{id}/{name}',[UserController::class,'mcq']);
+Route::post('submit-next/{id}',[UserController::class,'submitAndNext']);
 
 
 Route::view('admin-login','admin-login');

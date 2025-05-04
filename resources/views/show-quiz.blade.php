@@ -10,7 +10,7 @@
     <x-navbar name="{{ $name }}"></x-navbar>
  
     <div class="bg-gray-100 flex flex-col items-center min-h-screen ">        
-            <h2 class="text-2xl text-center text-gray-800 mb-6">All Current Quiz's MCQs
+            <h2 class="text-2xl text-center text-gray-800 mb-6">Quiz Name : {{ $quizName }}
                 <a href="/add-quiz" class="text-yellow-500 text-sm"> Back</a>
             </h2>
         <div class="w-200">

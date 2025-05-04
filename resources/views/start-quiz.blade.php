@@ -19,7 +19,7 @@
                 Good Luck
             </h1>
             @if (session('user'))
-            <a type="submit" href="/" class="bg-blue-500 rounded-md px-4 py-2 my-3 text-white">
+            <a type="submit" href="/mcq/{{ session('firstMCQ')->id.'/'.$quizName }}" class="bg-blue-500 rounded-md px-4 py-2 my-3 text-white">
                 Start Quiz
             </a>
             @else

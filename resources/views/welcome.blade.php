@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Home Page</title>
+    
 </head>
 <body>
     <x-user-navbar></x-user-navbar>

@@ -27,10 +27,10 @@
                         <li class="w-30" >Action</li>
                     </li>
                 </ul>
-                @foreach ($categories as $category)
+                @foreach ($categories as $key=>$category)
                 <li class="even:bg-gray-200 p-2">
                     <ul class="flex justify-between ">
-                        <li class="w-30" >{{$category->id}}</li>
+                        <li class="w-30" >{{$key+1}}</li>
                         <li class="w-70" >{{$category->name}}</li>
                         <li class="w-70" >{{$category->quizzes_count}}</li>
                         <li class="w-30 flex" >

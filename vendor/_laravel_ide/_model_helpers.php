@@ -1586,6 +1586,7 @@ namespace App\Models {
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record whereStatus($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record whereUpdatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record whereCreatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record withQuiz()
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record newModelQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record newQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record query()

@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Categories</title>
+    <title>{{ str_replace('-',' ',$quizName) }}</title>
 </head>
 <body>
     
     <x-user-navbar ></x-user-navbar>
  
     <div class="bg-gray-100 flex flex-col items-center min-h-screen ">        
-            <h1 class="text-4xl text-center text-green-800 mb-6 font-bold">{{ $quizName }}
+            <h1 class="text-4xl text-center text-green-800 mb-6 font-bold">{{ str_replace('-',' ',$quizName) }}
             </h1>
             <h2 class="text-lg text-center text-green-500 mb-6 font-bold">
                 This Quiz contains {{ $quizCount }} Questions and no limit to attempt Quiz

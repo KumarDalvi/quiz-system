@@ -23,7 +23,7 @@ class UserController extends Controller
     {
          $categories=Category::withCount('quizzes')->orderBy('quizzes_count','desc')->take(5)->get();
         //  $categories = Category::get();
-        $quizData=Quiz::withCount('Record')->orderBy('records_count','desc')->take(5)->get();
+        $quizData=Quiz::withCount('Records')->orderBy('records_count','desc')->take(5)->get();
         return view('welcome',['categories'=>$categories,'quizData'=>$quizData]);
     }
     function userQuizList($id,$category)

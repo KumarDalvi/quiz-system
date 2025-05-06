@@ -13,3 +13,5 @@ Homestead.yaml
 Vagrantfile
 npm-debug.log
 yarn-error.log
+/node_modules/
+/vendor/

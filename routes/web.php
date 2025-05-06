@@ -16,6 +16,7 @@ Route::post('user-signup',[UserController::class,'userSignup']);
 Route::get('user-logout',[UserController::class,'userLogout']);
 Route::get('user-signup-quiz',[UserController::class,'userSignupQuiz']);
 Route::get('certificate',[UserController::class,'certificate']);
+Route::get('download-certificate',[UserController::class,'downloadCertificate']);
 
 // Route::view('user-login','user-login');
 Route::get('user-login',function(){

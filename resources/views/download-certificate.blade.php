@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Quiz System | Certificate
-        
-    </title>
+    <title>Quiz System | Download Certidicate</title>
     @vite('resources/css/app.css')
 </head>
 <body class="pt-10 text-center">
-    <div class="flex justify-between w-200 ml-10">
-        <a href="/" class="text-green-500 font-bold">Back</a>
-        <a href="/download-certificate" class="text-green-500 font-bold">Download</a>
-    </div>
+    
 <div class="w-200 border-4 m-10 bg-gray-100 border-indigo-900 p-10 text-center">
     
     <h1 class="text-5xl flex">

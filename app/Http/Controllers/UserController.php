@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Crypt;
+use Spatie\Browsershot\Browsershot;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
@@ -234,5 +235,21 @@ class UserController extends Controller
         $data['quiz']=str_replace('-',' ',Session::get('currentQuiz')['quizName']);
         $data['name']=Session::get('user')['name'];
         return view('certificate',['data'=>$data]);
+    }
+
+    function downloadCertificate(){
+        $data=[];
+        $data['quiz']=str_replace('-',' ',Session::get('currentQuiz')['quizName']);
+        $data['name']=Session::get('user')['name'];
+
+        $html = view('download-certificate',['data'=>$data])->render();
+        return response(
+            Browsershot::html($html)->pdf()
+        )->withHeaders(
+            [
+                'Content-Type'=>"application/pdf",
+            'Content-disposition'=>"attachment;filename=certificate.pdf"
+            ]
+        );
     }
 }

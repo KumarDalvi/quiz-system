@@ -1271,6 +1271,8 @@ namespace App\Models {
      * @property-read \App\Models\Category $category
      * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Mcq> $Mcq
      * @property-read int|null $Mcq_count
+     * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Record> $Records
+     * @property-read int|null $Records_count
      * @method static \Illuminate\Database\Eloquent\Builder<Quiz>|Quiz whereId($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Quiz>|Quiz whereName($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Quiz>|Quiz whereCategoryId($value)
@@ -1580,6 +1582,7 @@ namespace App\Models {
      * @property mixed $user_id
      * @property mixed $quiz_id
      * @property int $id
+     * @property-read \App\Models\Quiz $quiz
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record whereId($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record whereQuizId($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Record>|Record whereUserId($value)

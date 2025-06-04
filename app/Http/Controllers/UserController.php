@@ -22,6 +22,7 @@ class UserController extends Controller
 {
     function welcome()
     {
+
          $categories=Category::withCount('quizzes')->orderBy('quizzes_count','desc')->take(5)->get();
         //  $categories = Category::get();
         $quizData=Quiz::withCount('Records')->orderBy('records_count','desc')->take(5)->get();
